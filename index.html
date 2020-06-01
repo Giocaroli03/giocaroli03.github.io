@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        ​<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        ​<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
         <style>
+            
             .titolo{
-                font-size: 30px;
-                color : red;
-                text-align: center ;
-                background-color: green;
-                border: 1px solid gainsboro;
+                font-size: 3em;
+                color: black;
+                margin: auto;
+                width:fit-content;
+                height:fit-content;
+                padding: 5px;
+                background-color: white;
+                border: 3px solid black;
+                border-radius: 5px;
             }
             .sottotitolo{
-                font-size: 17px;
-                color: honeydew;
-                background-color: indigo;
-                width: 10.3%;
+                font-size: 2em;
+                color: white;
+                width:fit-content;
+                height:fit-content;
+                padding: 3px;
+                background-color: rgb(0, 0, 0);
+                border-left: 3px solid white;
+                border-bottom: 3px solid rgb(255, 255, 255);
             }
             body{
-                background-color: khaki;
+                background-color: rgb(206, 206, 206);
+                margin-left: 5%;
+                margin-right: 5%;
             }
             .paragrafo1{
-                font-size: 13px;
-                font-style: italic ;
+                font-size: 2em;
+                color: black;
+                padding: 3px;
+                margin: 0.8em;
+                text-align: center;
+                border-bottom: 1px grey solid;
             }
-            #sottotitolo2{
-                font-size: 17px;
-                color: honeydew;
-                background-color: indigo;
-                width: 25%;
+            
+            .list-group-item{
+                background-color: rgb(206, 206, 206);
+                font-size: 1em;
             }
-            .paragrafo2{
-                font-size: 13px;
-                
+
+            ol{
+                background-color: rgb(252, 252, 252);
+                border-radius: 5px;
+                margin: 1em;
+                padding:1em;
+               
             }
+
+            ol li{
+                border-bottom: 2px solid rgb(187, 255, 190);
+                padding: 0.5em;
+                margin-left: 1em;
+            }
+
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                }
+
+            tr:hover {background-color:#f5f5f5;}
             .link{
-                font-size: 30px;
-            }
-            table, th, td {
-            border: 1px solid black;
-            }
-            .link{
-                font-size: 13px;
-                background-color: mediumaquamarine;
+                font-size: 1em;
+                background-color: white;
                 border: 1px solid black;
             }
+
         </style>
 
     </head>
     <body>
+        <div class="jumbotron jumbotron-fluid"  style="border-color: white black black white; border-width: 0.5em; border-style: solid;">
+            <div class="container">
+              <h1 class="display-4">Ciao a tutti!</h1>
+              <p class="lead">Questo è un breve sito in cui parlerò di una vacanza e dei miei hobby</p>
+            </div>
+          </div>
         <div class = "container-fliud">
-
-           
         <h1 class = "titolo">LA MIA VACANZA </h1>
         <p class="sottotitolo"><b>La Vacanza</b></p>
         <div class="row">
@@ -70,21 +105,24 @@
         </div>
        </div>
         <p class="paragrafo1">Quest'estate,a metà luglio, sono andato con la mia famiglia all'isola d'Elba. </p>
-            
         
-       <ol class="list-group">
-        <li class="paragrafo1">Fortezze medicee di Portoferraio</li>
-        <li class="paragrafo1">Spiaggia delle Ghiaie</li>
-        <li class="paragrafo1">Centro storico di Portoferraio</li>
-       </ol>
-       <ol class="list-group">
-           <li class ="paragrafo1" >Siamo andati in spiaggia </li>
-           <li class ="paragrafo1" >Abbiamo visitato luoghi storici </li>
-           <li class ="paragrafo1" >Abbiamo fatto delle passeggiate </li>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="border-left: 1px solid rgb(170, 170, 170);">Cosa ho visitato?</li>
+            <li class="list-group-item">Fortezze medicee di Portoferraio</li>
+            <li class="list-group-item">Spiaggia delle Ghiaie</li>
+            <li class="list-group-item">Centro storico di Portoferraio</li>
+        </ul>
 
+        <br>
+        
+       <ol>
+           <li>Siamo andati in spiaggia </li>
+           <li  >Abbiamo visitato luoghi storici </li>
+           <li >Abbiamo fatto delle passeggiate </li>
        </ol>
+
        <h1 class = "titolo">I MIEI HOBBY </h1>
-       <p id = "sottotitolo2">Cosa faccio nella giornata</p>
+       <p class= "sottotitolo">Cosa faccio nella giornata</p>
        
        <div class="container">
         <div class="row">
@@ -102,30 +140,66 @@
             </div>
         </div>
        </div>
-       <p class = "paragrafo2">Come sport faccio nuoto. Nel tempo libero ascolto musica ed esco con gli amici  </p>
-       <a class="btn btn-danger"  href="https://www.w3schools.com/">link per il sito di html</a>
-       <table style="width:100%">
+
+       <p class = "paragrafo1">Come sport faccio nuoto. Nel tempo libero ascolto musica ed esco con gli amici  </p>
+       
+       <table>
         <tr>
-          <th>Nome</th>
-          <th>Cognome</th>
-          <th>Scuola</th>
-        </tr>
-        <tr>
-          <td>Giovanni</td>
-          <td>Caroli</td>
-          <td>Liceo Spallanzani</td>
-        </tr>
-        
-      </table> 
-      
-      <div class="row">
-        <div class="col-lg-4">Giovanni </div>
-        <div class="col-lg-4">Caroli</div>
-        <div class="col-lg-4">3f</div>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Scuola</th>
+          </tr>
+          <tr>
+            <td>Giovanni</td>
+            <td>Caroli</td>
+            <td>Liceo Spallanzani</td>
+          </tr>
+      </table>
+      <br>
+
+
+    <a class="btn btn-danger" id="link"  href="https://www.w3schools.com/">link per il sito di html</a>
+    <br>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>ATTENZIONE!</strong> Hai appena spiato la mia vita!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <br>
+    <div class="spinner-grow text-danger" role="status"></div>
+    <br>
+</body>
+<div class="container">
+    <h4> Scrivi i tuoi dati per essere salutato </h4>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input  required type="text" class="form-control" id="nome" placeholder="Scrivi il nome">
       </div>
-      <div class="row">
-        <div class="col-lg-4">Giovanni</div>
-        <div class="col-lg-4">Caroli</div>
-        <div class="col-lg-4">3f</div>
+      <div class="form-group">
+        <label for="age">cognome:</label>
+        <input required type="text" class="form-control" id="cognome" placeholder="Scrivi il cognome">
       </div>
-    </body>
+      <div class="form-group">
+        <label for="city">compleanno:</label>
+        <input required type="text" class="form-control" id="compleanno" placeholder="Scrivi il tuo compleanno">
+      </div>
+      <button type="button" onclick="SalutaUtente()" class="btn btn-danger">Schiaccia per essere salutato</button>
+    </form>
+    <p id="output"> dio cane</p> 
+  </div>
+  
+  <script>
+    function SalutaUtente()
+      {
+        var nome = document.getElementById("nome").value;
+        var cognome = document.getElementById("cognome").value;
+        var compleanno = document.getElementById("compleanno").value;
+       
+        document.getElementById("output").innerHTML = "Ciao " + nome + cognome + " nato il " + compleanno +".";
+      }
+  </script>
+  
+  </body>
+  </html>
